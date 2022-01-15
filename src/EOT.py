@@ -37,4 +37,4 @@ class EOT(e.Executor):
 	#Called when executing this as a functor.
 	#Required method from eons.Executor. See that class for more details.
 	def UserFunction(this, **kwargs):
-		print(this.GetStardate())
+		print(EOT.GetStardate())
