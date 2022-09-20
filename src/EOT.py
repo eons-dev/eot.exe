@@ -7,6 +7,17 @@ class EOT(e.Executor):
 	def __init__(self):
 		super().__init__(name="eons time", descriptionStr="A stardate implementation")
 
+	def ParseArgs(this):
+		super().ParseArgs()
+
+		if (this.args.verbose > 0):
+			logging.getLogger().setLevel(logging.DEBUG)
+		elif (this.args.quiet == 1):
+			logging.getLogger().setLevel(logging.WARNING)
+		elif (this.args.quiet > 1):
+			logging.getLogger().setLevel(logging.ERROR)
+
+
 	#RETURNS the current time as a stardate with 8 decimal point precision.
 	def GetStardate():
 		now = datetime.utcnow()
@@ -36,5 +47,5 @@ class EOT(e.Executor):
 
 	#Called when executing this as a functor.
 	#Required method from eons.Executor. See that class for more details.
-	def UserFunction(this, **kwargs):
+	def UserFunction(this):
 		print(EOT.GetStardate())
