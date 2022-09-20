@@ -7,7 +7,7 @@
         "release"
       ],
       "build" : "proxy",
-      "build_in" : "bin_eot",
+      "build_in" : "local",
       "config" : {
         "clear_build_path" : false,
         "proxy" : "../../config/local.json",

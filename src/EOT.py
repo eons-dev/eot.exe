@@ -10,6 +10,8 @@ class EOT(e.Executor):
 	def ParseArgs(this):
 		super().ParseArgs()
 
+		logging.getLogger().setLevel(logging.ERROR)
+
 		if (this.args.verbose > 0):
 			logging.getLogger().setLevel(logging.DEBUG)
 		elif (this.args.quiet == 1):

@@ -12,7 +12,6 @@
       "build_in" : "local",
       "copy" : [
         {"../../src/" : "local/src/"},
-        {"../../inc/" : "local/inc/"},
         {"../../test/" : "local/test/"},
         {"../../README.md" : "local/README.md"},
         {"../../LICENSE" : "local/LICENSE"}
@@ -29,11 +28,10 @@
       "build" : "proxy",
       "build_in" : "github",
       "copy" : [
-        {"../../src/" : "local/src/"},
-        {"../../inc/" : "local/inc/"},
-        {"../../test/" : "local/test/"},
-        {"../../README.md" : "local/README.md"},
-        {"../../LICENSE" : "local/LICENSE"}
+        {"../../src/" : "github/local/src/"},
+        {"../../test/" : "github/local/test/"},
+        {"../../README.md" : "github/local/README.md"},
+        {"../../LICENSE" : "github/local/LICENSE"}
       ],
       "config" : {
         "clear_build_path" : false,
