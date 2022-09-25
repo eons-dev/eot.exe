@@ -1,9 +1,9 @@
 import os
 import logging
-import eons as e
+import eons
 from datetime import datetime
 
-class EOT(e.Executor):
+class EOT(eons.Executor):
 	def __init__(self):
 		super().__init__(name="eons time", descriptionStr="A stardate implementation")
 
