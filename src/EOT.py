@@ -1,10 +1,8 @@
-import eons
 from datetime import datetime
 
-class EOT(eons.Executor):
+class EOT():
 	def __init__(self):
 		super().__init__(name="Eons Official Time", descriptionStr="A stardate implementation")
-
 
 	#RETURNS the current time as a stardate with 8 decimal point precision.
 	@staticmethod
@@ -35,6 +33,5 @@ class EOT(eons.Executor):
 		return stardate
 
 	#Called when executing this as a functor.
-	#Required method from eons.Executor. See that class for more details.
-	def Function(this):
+	def __call__(this):
 		print(EOT.GetStardate())
