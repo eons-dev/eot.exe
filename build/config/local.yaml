@@ -17,3 +17,11 @@ next:
 		- build: py_install
 			build_in: ../
 			config: {}
+- build: test_case
+  config:
+    assertions:
+    - kind: command
+      check: return
+      command: eot
+      expected: 0
+      comparator: eq

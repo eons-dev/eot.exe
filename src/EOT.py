@@ -1,9 +1,6 @@
 from datetime import datetime
 
 class EOT():
-	def __init__(self):
-		super().__init__(name="Eons Official Time", descriptionStr="A stardate implementation")
-
 	#RETURNS the current time as a stardate with 8 decimal point precision.
 	@staticmethod
 	def GetStardate():
