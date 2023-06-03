@@ -23,7 +23,7 @@ class EOT():
 		decimal = float('%.8f' % (exact_decimal))
 		# error = decimal * 365 - day_of_year - (hour / 24)
 		# error_hours = error * 24
-		stardate = year + decimal
+		stardate = format(year + decimal, '.8f')
 
 		# print("stardate for", year, day_of_year, hour)
 		# print("error:", error, "in hours:", error_hours)
